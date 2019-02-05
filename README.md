@@ -37,7 +37,7 @@ Follow these steps to setup your git _fork_ and _branch_.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge the `<firstName-lastName>` branch into the master branch on your fork. **Please don't merge your own pull request**
+- [x] Submit a Pull-Request to merge the `<firstName-lastName>` branch into the master branch on your fork. **Please don't merge your own pull request**
 - [ ] Use GitHub's webiste to add your project manager as a reviewer on the pull-request.
 - [ ] Your project manager will count the project as complete by merging the branch back into the master branch of your forked repository.
 
@@ -58,6 +58,7 @@ The expected/assumed behavior of the application is listed below.
 
 - shows the controls and display
 
+
 ### Display Component
 
 - displays if gate is open/closed and if it is locked/unlocked
@@ -65,6 +66,7 @@ The expected/assumed behavior of the application is listed below.
 - displays 'Locked' if the `locked` prop is `true` and 'Unlocked' if othewise
 - when `locked` or `closed` use the `red-led` class
 - when `unlocked` or `open` use the `green-led` class
+- defaults to `unlocked` and `open`
 
 ### Controls Component
 
@@ -72,6 +74,7 @@ The expected/assumed behavior of the application is listed below.
 - buttons' text changes to reflect the state the door will be in if clicked
 - the closed toggle button is disabled if the gate is closed
 - the locked toggle button is disabled if the gate is open
+- cannot be closed or opened if it is locked
 
 ## Stretch Problem
 
