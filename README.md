@@ -28,16 +28,16 @@ The requirements are listed under the _Minimum Viable Product_ section below.
 
 Follow these steps to setup your git _fork_ and _branch_.
 
-- [ ] Fork this repository.
-- [ ] Use GitHub's website to add your project manager as collaborator on **your fork**.
-- [ ] **Clone your forked version** of the repository (**Not Lambda's**!).
-- [ ] Create a new branch: `git checkout -b <firstName-lastName>`.
-- [ ] Commit changes to your `<firstName-lastName>` branch.
-- [ ] Push often to your branch: `git push origin <firstName-lastName>`.
+- [x] Fork this repository.
+- [x] Use GitHub's website to add your project manager as collaborator on **your fork**.
+- [x] **Clone your forked version** of the repository (**Not Lambda's**!).
+- [x] Create a new branch: `git checkout -b <firstName-lastName>`.
+- [x] Commit changes to your `<firstName-lastName>` branch.
+- [x] Push often to your branch: `git push origin <firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge the `<firstName-lastName>` branch into the master branch on your fork. **Please don't merge your own pull request**
+- [x] Submit a Pull-Request to merge the `<firstName-lastName>` branch into the master branch on your fork. **Please don't merge your own pull request**
 - [ ] Use GitHub's webiste to add your project manager as a reviewer on the pull-request.
 - [ ] Your project manager will count the project as complete by merging the branch back into the master branch of your forked repository.
 
@@ -57,6 +57,11 @@ The expected/assumed behavior of the application is listed below.
 ### Dashboard
 
 - shows the controls and display
+- buttons' text changes to reflect the state the door will be in if clicked
+- the closed toggle button is disabled if the gate is closed
+- the locked toggle button is disabled if the gate is open
+- cannot be closed or opened if it is locked
+
 
 ### Display Component
 
@@ -65,13 +70,12 @@ The expected/assumed behavior of the application is listed below.
 - displays 'Locked' if the `locked` prop is `true` and 'Unlocked' if othewise
 - when `locked` or `closed` use the `red-led` class
 - when `unlocked` or `open` use the `green-led` class
+- defaults to `unlocked` and `open`
 
 ### Controls Component
 
 - provide buttons to toggle the `closed` and `locked` states.
-- buttons' text changes to reflect the state the door will be in if clicked
-- the closed toggle button is disabled if the gate is closed
-- the locked toggle button is disabled if the gate is open
+
 
 ## Stretch Problem
 
